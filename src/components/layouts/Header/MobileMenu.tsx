@@ -14,7 +14,7 @@ import NavLinks from "./NavLinks";
 const MobileMenu = () => {
   return (
     <Sheet>
-      <SheetTrigger className="">
+      <SheetTrigger className="lg:hidden">
         <AlignJustify className="size-6" />
       </SheetTrigger>
       <SheetContent>
