@@ -1,10 +1,14 @@
 import {
   Activity,
+  Award,
+  Heart,
   type LucideIcon,
   Scissors,
+  Shield,
   Smile,
   Stethoscope,
   Syringe,
+  Users,
   Zap,
 } from "lucide-react";
 
@@ -21,6 +25,20 @@ export interface Service {
   description: string;
   icon: LucideIcon;
   features: string[];
+}
+
+export interface AboutFeature {
+  id: string;
+  title: string;
+  description: string;
+  icon: LucideIcon;
+}
+
+export interface AboutStats {
+  id: string;
+  number: string;
+  label: string;
+  description: string;
 }
 
 export const navLinks: NavLink[] = [
@@ -134,5 +152,63 @@ export const services: Service[] = [
       "Perawatan gusi",
       "Konsultasi dental",
     ],
+  },
+];
+
+export const aboutFeatures: AboutFeature[] = [
+  {
+    id: "experience",
+    title: "Pengalaman Terpercaya",
+    description:
+      "Lebih dari 10 tahun melayani kesehatan hewan peliharaan dengan dedikasi tinggi dan profesionalisme.",
+    icon: Award,
+  },
+  {
+    id: "team",
+    title: "Tim Profesional",
+    description:
+      "Dokter hewan bersertifikat dan staff berpengalaman yang siap memberikan perawatan terbaik.",
+    icon: Users,
+  },
+  {
+    id: "care",
+    title: "Perawatan Penuh Kasih",
+    description:
+      "Kami memahami ikatan emosional antara Anda dan hewan peliharaan, memberikan perawatan dengan penuh kasih sayang.",
+    icon: Heart,
+  },
+  {
+    id: "safety",
+    title: "Keamanan Terjamin",
+    description:
+      "Fasilitas modern dengan standar keamanan tinggi dan protokol kesehatan yang ketat.",
+    icon: Shield,
+  },
+];
+
+export const aboutStats: AboutStats[] = [
+  {
+    id: "patients",
+    number: "5000+",
+    label: "Pasien Ditangani",
+    description: "Hewan peliharaan yang telah kami rawat",
+  },
+  {
+    id: "experience",
+    number: "10+",
+    label: "Tahun Pengalaman",
+    description: "Melayani dengan dedikasi tinggi",
+  },
+  {
+    id: "doctors",
+    number: "15+",
+    label: "Dokter Profesional",
+    description: "Tim medis berpengalaman",
+  },
+  {
+    id: "satisfaction",
+    number: "98%",
+    label: "Tingkat Kepuasan",
+    description: "Kepuasan pelanggan kami",
   },
 ];
