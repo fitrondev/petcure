@@ -1,13 +1,20 @@
 import {
   Activity,
   Award,
+  Clock,
+  Facebook,
   Heart,
+  Instagram,
   type LucideIcon,
+  Mail,
+  MapPin,
+  Phone,
   Scissors,
   Shield,
   Smile,
   Stethoscope,
   Syringe,
+  Twitter,
   Users,
   Zap,
 } from "lucide-react";
@@ -50,6 +57,21 @@ export interface Testimonial {
   avatar: string;
   petName?: string;
   petType?: string;
+}
+
+export interface ContactInfo {
+  id: string;
+  title: string;
+  value: string;
+  description: string;
+  icon: LucideIcon;
+}
+
+export interface SocialMedia {
+  id: string;
+  name: string;
+  url: string;
+  icon: LucideIcon;
 }
 
 export const navLinks: NavLink[] = [
@@ -269,5 +291,57 @@ export const testimonials: Testimonial[] = [
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
     petName: "Spike",
     petType: "Iguana Hijau",
+  },
+];
+
+export const contactInfo: ContactInfo[] = [
+  {
+    id: "address",
+    title: "Alamat",
+    value: "Jl. Kesehatan Hewan No. 123",
+    description: "Jakarta Selatan, DKI Jakarta 12345",
+    icon: MapPin,
+  },
+  {
+    id: "phone",
+    title: "Telepon",
+    value: "+62 21 1234 5678",
+    description: "Hubungi kami kapan saja",
+    icon: Phone,
+  },
+  {
+    id: "email",
+    title: "Email",
+    value: "info@petcure.com",
+    description: "Kirim pesan kepada kami",
+    icon: Mail,
+  },
+  {
+    id: "hours",
+    title: "Jam Operasional",
+    value: "24/7 Darurat",
+    description: "Senin-Minggu: 08:00 - 20:00",
+    icon: Clock,
+  },
+];
+
+export const socialMedia: SocialMedia[] = [
+  {
+    id: "facebook",
+    name: "Facebook",
+    url: "https://facebook.com/petcure",
+    icon: Facebook,
+  },
+  {
+    id: "instagram",
+    name: "Instagram",
+    url: "https://instagram.com/petcure",
+    icon: Instagram,
+  },
+  {
+    id: "twitter",
+    name: "Twitter",
+    url: "https://twitter.com/petcure",
+    icon: Twitter,
   },
 ];
