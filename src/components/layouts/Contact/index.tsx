@@ -8,7 +8,7 @@ import SocialMediaCard from "./SocialMediaCard";
 
 const Contact = () => {
   return (
-    <section className="py-10 md:py-14">
+    <section id="contact" className="py-10 md:py-14">
       <div className="container">
         {/* Section Title */}
         <SectionTitle

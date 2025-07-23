@@ -4,7 +4,7 @@ import { services } from "@/constants/data";
 
 const Services = () => {
   return (
-    <section className="py-10 md:py-14">
+    <section id="services" className="py-10 md:py-14">
       <div className="container">
         {/* Header */}
         <SectionTitle

@@ -4,7 +4,7 @@ import { aboutFeatures } from "@/constants/data";
 
 const About = () => {
   return (
-    <section className="py-10 lg:py-14">
+    <section id="about" className="py-10 lg:py-14">
       <div className="container">
         {/* Section Title */}
         <SectionTitle

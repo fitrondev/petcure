@@ -90,13 +90,13 @@ export const navLinks: NavLink[] = [
   {
     id: "services",
     label: "Layanan",
-    href: "/services",
+    href: "#services",
     description: "Layanan perawatan hewan",
   },
   {
     id: "about",
     label: "Tentang",
-    href: "/about",
+    href: "#about",
     description: "Tentang PetCure",
   },
   {
@@ -108,7 +108,7 @@ export const navLinks: NavLink[] = [
   {
     id: "contact",
     label: "Kontak",
-    href: "/contact",
+    href: "#contact",
     description: "Hubungi kami",
   },
 ];
