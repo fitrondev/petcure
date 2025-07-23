@@ -7,6 +7,7 @@ import App from "./App.tsx";
 import { ThemeProvider } from "./components/context/theme-provider.tsx";
 import "./index.css";
 import HomeLayout from "./layouts/HomeLayout.tsx";
+import Doctors from "./pages/Doctors/index.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -15,6 +16,10 @@ createRoot(document.getElementById("root")!).render(
         <Routes>
           <Route element={<HomeLayout />}>
             <Route index element={<App />} />
+          </Route>
+
+          <Route element={<HomeLayout />}>
+            <Route path="/doctors" element={<Doctors />} />
           </Route>
         </Routes>
       </BrowserRouter>

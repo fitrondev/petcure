@@ -80,6 +80,24 @@ export interface FAQ {
   answer: string;
 }
 
+export interface Doctor {
+  id: string;
+  name: string;
+  title: string;
+  specialization: string;
+  experience: string;
+  education: string;
+  description: string;
+  image: string;
+  phone: string;
+  email: string;
+  schedule: {
+    day: string;
+    time: string;
+  }[];
+  achievements: string[];
+}
+
 export const navLinks: NavLink[] = [
   {
     id: "home",
@@ -110,6 +128,102 @@ export const navLinks: NavLink[] = [
     label: "Kontak",
     href: "#contact",
     description: "Hubungi kami",
+  },
+];
+
+export const doctors: Doctor[] = [
+  {
+    id: "dr-amanda",
+    name: "Dr. Amanda Sari",
+    title: "Dokter Hewan Senior",
+    specialization: "Bedah & Penyakit Dalam",
+    experience: "8 tahun",
+    education: "S1 Kedokteran Hewan IPB, S2 Bedah Hewan UGM",
+    description:
+      "Dr. Amanda adalah dokter hewan berpengalaman dengan spesialisasi bedah dan penyakit dalam. Beliau telah menangani ribuan kasus dengan tingkat keberhasilan yang tinggi.",
+    image:
+      "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80",
+    phone: "+62 812 3456 7890",
+    email: "amanda@petcure.com",
+    schedule: [
+      { day: "Senin - Jumat", time: "08:00 - 16:00" },
+      { day: "Sabtu", time: "08:00 - 12:00" },
+    ],
+    achievements: [
+      "Sertifikat Bedah Hewan Kecil",
+      "Pelatihan Ultrasonografi Veteriner",
+      "Member PDHI (Perhimpunan Dokter Hewan Indonesia)",
+    ],
+  },
+  {
+    id: "dr-budi",
+    name: "Dr. Budi Santoso",
+    title: "Dokter Hewan Spesialis Eksotik",
+    specialization: "Hewan Eksotik & Reptil",
+    experience: "6 tahun",
+    education: "S1 Kedokteran Hewan UNAIR, Sertifikat Exotic Animal Medicine",
+    description:
+      "Dr. Budi adalah ahli dalam menangani hewan eksotik seperti reptil, burung, dan mamalia kecil. Pengalaman internasionalnya membuat beliau menjadi rujukan untuk kasus-kasus unik.",
+    image:
+      "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80",
+    phone: "+62 813 4567 8901",
+    email: "budi@petcure.com",
+    schedule: [
+      { day: "Selasa - Sabtu", time: "09:00 - 17:00" },
+      { day: "Minggu", time: "10:00 - 14:00" },
+    ],
+    achievements: [
+      "Certified Exotic Animal Veterinarian",
+      "Pelatihan Reptile Medicine di Australia",
+      "Penulis Buku 'Perawatan Hewan Eksotik'",
+    ],
+  },
+  {
+    id: "dr-sari",
+    name: "Dr. Sari Dewi",
+    title: "Dokter Hewan Spesialis Nutrisi",
+    specialization: "Nutrisi & Preventif",
+    experience: "5 tahun",
+    education: "S1 Kedokteran Hewan UNPAD, S2 Animal Nutrition",
+    description:
+      "Dr. Sari fokus pada pencegahan penyakit melalui nutrisi yang tepat. Beliau ahli dalam merancang program diet khusus untuk berbagai kondisi kesehatan hewan.",
+    image:
+      "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80",
+    phone: "+62 814 5678 9012",
+    email: "sari@petcure.com",
+    schedule: [
+      { day: "Senin - Kamis", time: "08:00 - 15:00" },
+      { day: "Sabtu", time: "09:00 - 13:00" },
+    ],
+    achievements: [
+      "Certified Animal Nutritionist",
+      "Peneliti Nutrisi Hewan Tropis",
+      "Speaker Seminar Nasional Nutrisi Hewan",
+    ],
+  },
+  {
+    id: "dr-rizki",
+    name: "Dr. Rizki Pratama",
+    title: "Dokter Hewan Emergency",
+    specialization: "Gawat Darurat & Intensive Care",
+    experience: "7 tahun",
+    education:
+      "S1 Kedokteran Hewan UNSYIAH, Emergency & Critical Care Certification",
+    description:
+      "Dr. Rizki adalah spesialis gawat darurat yang berpengalaman menangani kasus-kasus kritis. Beliau tersedia 24/7 untuk layanan darurat dengan respons time yang cepat.",
+    image:
+      "https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=400&q=80",
+    phone: "+62 815 6789 0123",
+    email: "rizki@petcure.com",
+    schedule: [
+      { day: "24/7 Emergency", time: "Siaga Penuh" },
+      { day: "Konsultasi Rutin", time: "Rabu & Jumat 14:00-18:00" },
+    ],
+    achievements: [
+      "Emergency & Critical Care Specialist",
+      "Advanced Life Support Certification",
+      "Tim Rescue Hewan Bencana Alam",
+    ],
   },
 ];
 
