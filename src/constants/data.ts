@@ -41,6 +41,17 @@ export interface AboutStats {
   description: string;
 }
 
+export interface Testimonial {
+  id: string;
+  name: string;
+  role: string;
+  content: string;
+  rating: number;
+  avatar: string;
+  petName?: string;
+  petType?: string;
+}
+
 export const navLinks: NavLink[] = [
   {
     id: "home",
@@ -186,29 +197,77 @@ export const aboutFeatures: AboutFeature[] = [
   },
 ];
 
-export const aboutStats: AboutStats[] = [
+export const testimonials: Testimonial[] = [
   {
-    id: "patients",
-    number: "5000+",
-    label: "Pasien Ditangani",
-    description: "Hewan peliharaan yang telah kami rawat",
+    id: "testimonial-1",
+    name: "Sarah Johnson",
+    role: "Pemilik Kucing",
+    content:
+      "PetCure benar-benar luar biasa! Dr. Amanda sangat sabar dan teliti dalam memeriksa Whiskers. Fasilitas yang bersih dan modern membuat saya merasa tenang meninggalkan kucing kesayangan di sini.",
+    rating: 5,
+    avatar:
+      "https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=150&q=80",
+    petName: "Whiskers",
+    petType: "Kucing Persia",
   },
   {
-    id: "experience",
-    number: "10+",
-    label: "Tahun Pengalaman",
-    description: "Melayani dengan dedikasi tinggi",
+    id: "testimonial-2",
+    name: "Michael Chen",
+    role: "Pemilik Anjing",
+    content:
+      "Layanan grooming di PetCure sangat memuaskan. Max selalu terlihat tampan setelah grooming, dan yang terpenting dia tidak stress karena staff yang sangat ramah dan berpengalaman.",
+    rating: 5,
+    avatar:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80",
+    petName: "Max",
+    petType: "Golden Retriever",
   },
   {
-    id: "doctors",
-    number: "15+",
-    label: "Dokter Profesional",
-    description: "Tim medis berpengalaman",
+    id: "testimonial-3",
+    name: "Lisa Rodriguez",
+    role: "Pemilik Kelinci",
+    content:
+      "Ketika Bunny sakit tengah malam, layanan darurat PetCure sangat membantu. Tim medis langsung tanggap dan berhasil menyelamatkan kelinci kesayangan saya. Terima kasih PetCure!",
+    rating: 5,
+    avatar:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80",
+    petName: "Bunny",
+    petType: "Kelinci Holland Lop",
   },
   {
-    id: "satisfaction",
-    number: "98%",
-    label: "Tingkat Kepuasan",
-    description: "Kepuasan pelanggan kami",
+    id: "testimonial-4",
+    name: "David Kim",
+    role: "Pemilik Burung",
+    content:
+      "Konsultasi nutrisi untuk burung kakak tua saya sangat membantu. Dr. Sari memberikan panduan yang detail dan mudah dipahami. Sekarang Coco lebih sehat dan aktif.",
+    rating: 5,
+    avatar:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+    petName: "Coco",
+    petType: "Kakak Tua",
+  },
+  {
+    id: "testimonial-5",
+    name: "Emma Thompson",
+    role: "Pemilik Hamster",
+    content:
+      "Meskipun hewan peliharaan saya kecil, PetCure tetap memberikan perhatian yang sama besar. Pemeriksaan rutin untuk Peanut selalu dilakukan dengan hati-hati dan profesional.",
+    rating: 5,
+    avatar:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80",
+    petName: "Peanut",
+    petType: "Hamster Syrian",
+  },
+  {
+    id: "testimonial-6",
+    name: "Robert Wilson",
+    role: "Pemilik Iguana",
+    content:
+      "Sulit menemukan dokter hewan yang paham reptil, tapi di PetCure saya menemukan ahlinya. Dr. Budi sangat knowledgeable tentang perawatan iguana dan memberikan saran yang sangat berharga.",
+    rating: 5,
+    avatar:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+    petName: "Spike",
+    petType: "Iguana Hijau",
   },
 ];
